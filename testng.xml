@@ -1,0 +1,8 @@
+<suite name="PlaywrightSuite">
+    <test name="BasicTests">
+        <classes>
+            
+            <class name="tests.b2c" />
+        </classes>
+    </test>
+</suite>
