@@ -2,7 +2,7 @@
     <test name="BasicTests">
         <classes>
             
-            <class name="tests.b2c" />
+            <class name="tests.B2CTest" />
         </classes>
     </test>
 </suite>
