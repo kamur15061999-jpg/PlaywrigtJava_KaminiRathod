@@ -2,11 +2,9 @@ package tests;
 
 import org.testng.Assert;
 import org.testng.SkipException;
-import org.testng.annotations.*;
-import com.microsoft.playwright.*;
+import org.testng.annotations.Test;
 
 import base.BaseTest;
-import pagesobject.HomePage;
 import pagesobject.LoginPage;
 
 public class LoginTest2  extends BaseTest {
@@ -15,8 +13,7 @@ public class LoginTest2  extends BaseTest {
 	    	public void logintest1() {
 
 	    	    LoginPage login = new LoginPage(page);
-	    	    HomePage home = new HomePage(page);
-
+	    	   
 	    	    test.info("Starting login flow");
 	    	    login.loginWithEmail("kamini.r@technoheaven.com");
 	    	    
@@ -34,7 +31,7 @@ public void logintest2() {
 public void logintest3() {
 
     LoginPage login = new LoginPage(page);
-    HomePage home = new HomePage(page);
+   
 
     test.info("Starting login flow");
 
