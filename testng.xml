@@ -1,11 +1,9 @@
 <suite name="PlaywrightSuite">
     <test name="BasicTests">
         <classes>
-            
-         
             <class name="tests.B2CTest" />
              <class name="tests.B2cTourVisaBooking" />
-            
+            <class name="tests.CruiseHolidayInquiry" />
         </classes>
     </test>
 </suite>
