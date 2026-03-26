@@ -2,8 +2,6 @@ package tests;
 
 import org.testng.annotations.Test;
 
-import com.microsoft.playwright.Locator;
-
 import base.BaseTest;
 
 public class LocatorsDemo extends BaseTest {

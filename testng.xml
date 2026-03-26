@@ -1,9 +1,37 @@
-<suite name="PlaywrightSuite">
-    <test name="BasicTests">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="PlaywrightSuite" verbose="1">
+
+    <test name="LoginTests">
+        <classes>
+            <class name="tests.LoginTest" />
+            <class name="tests.LoginTest2" />
+        </classes>
+    </test>
+
+    <test name="B2CTests">
         <classes>
             <class name="tests.B2CTest" />
-             <class name="tests.B2cTourVisaBooking" />
+            <class name="tests.B2cTourVisaBooking" />
+        </classes>
+    </test>
+
+    <test name="ContentValidation">
+        <classes>
+            <class name="tests.ContentCheckTest" />
+        </classes>
+    </test>
+
+    <test name="ActivityTests">
+        <classes>
+            <class name="tests.DubaiActivitiesTest" />
+            <class name="tests.DevBookingTest" />
+        </classes>
+    </test>
+
+    <test name="CruiseTests">
+        <classes>
             <class name="tests.CruiseHolidayInquiry" />
         </classes>
     </test>
+
 </suite>

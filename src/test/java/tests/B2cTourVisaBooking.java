@@ -1,6 +1,5 @@
 package tests;
 
-import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import base.BaseTest;
@@ -21,8 +20,9 @@ public class B2cTourVisaBooking extends BaseTest {
         booking.fillUserDetails("kamini Rathod", "kamini.r@technoheaven.com", "9645679797");
         booking.payment("rayna", "5412 8589 8985 8555", "02/25", "123");
         if (booking.isPaymentFailed()) {
-        System.out.println("Tour Booking is Done Sucessfully");
+      
         }
+        System.out.println("Tour Booking is Done Sucessfully");
     }
 
     @Test
@@ -36,9 +36,13 @@ public class B2cTourVisaBooking extends BaseTest {
         booking.fillUserDetails("kamini", "kamini.r@technoheaven.com", "9666565656");
         booking.payment("rayna", "5464 6656 5656 5656", "01/25", "123");
         if (booking.isPaymentFailed()) {
-        System.out.println("Visa Booking is Done Sucessfully ");
+        
         }
-    }}
+        System.out.println("Visa Booking is Done Sucessfully ");
+        
+    }
+    
+}
     
 /*
  * @Test public void tourBookingTest1() { TourVisaBookingObject booking = new

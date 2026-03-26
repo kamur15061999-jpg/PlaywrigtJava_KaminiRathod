@@ -1,6 +1,5 @@
 package pagesobject;
 
-import java.nio.file.Paths;
 import com.microsoft.playwright.*;
 import com.microsoft.playwright.options.AriaRole;
 
@@ -27,7 +26,7 @@ public class TourVisaBookingObject {
     public void selectTourDateGuests() {
         page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("More dates")).click();
         page.getByTestId("DateInput.button[1]").click();
-        page.getByRole(AriaRole.BUTTON,new Page.GetByRoleOptions().setName("19")).nth(2).click();
+        page.getByRole(AriaRole.BUTTON, new Page.GetByRoleOptions().setName("19")).nth(1).click();
         page.getByTestId("TourGuestInput.button[1]").first().click();
         page.getByTestId("TourGuestInput.button[1]").nth(1).click();
         page.getByRole(AriaRole.BUTTON,new Page.GetByRoleOptions().setName("Select")).first().click();}

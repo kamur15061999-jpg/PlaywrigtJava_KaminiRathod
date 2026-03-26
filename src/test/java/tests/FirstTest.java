@@ -2,11 +2,6 @@ package tests;
 
 import org.testng.annotations.Test;
 
-import com.microsoft.playwright.Browser;
-import com.microsoft.playwright.BrowserType;
-import com.microsoft.playwright.Page;
-import com.microsoft.playwright.Playwright;
-
 import base.BaseTest;
 
 public class FirstTest extends BaseTest {

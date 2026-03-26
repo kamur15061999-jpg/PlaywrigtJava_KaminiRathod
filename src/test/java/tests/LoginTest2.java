@@ -30,9 +30,6 @@ public void logintest2() {
 @Test
 public void logintest3() {
 
-    LoginPage login = new LoginPage(page);
-   
-
     test.info("Starting login flow");
 
     page.waitForTimeout(10000);
